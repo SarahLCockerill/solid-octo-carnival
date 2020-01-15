@@ -10,11 +10,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 garden <- read.csv("GardenOzone.csv")
 
-glimpse(garden)
+library(tidyverse)
 ```
 
 ```{r}
-library(tidyverse)
+glimpse(garden)
 ```
 
 ```{r}
