@@ -16,3 +16,11 @@ glimpse(garden)
 ```{r}
 library(tidyverse)
 ```
+
+```{r}
+ggplot(garden, aes(x = Ozone, fill = Garden.location))+
+  geom_histogram(bins = 7)+
+  facet_wrap(~Garden.location, ncol = 1)+
+  theme_bw()
+```
+
